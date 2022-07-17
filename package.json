@@ -1,0 +1,23 @@
+{
+  "name": "krist-docs",
+  "version": "1.0.0",
+  "description": "Documentation for Krist and related libraries.",
+  "main": "index.js",
+  "authors": {
+    "name": "Drew Edwards",
+    "email": "github@drew.contact"
+  },
+  "repository": "https://github.com/tmpim/KristDocs/krist-docs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "@vuepress/plugin-back-to-top": "^1.9.7",
+    "vuepress-theme-yuu": "^3.1.1"
+  }
+}
