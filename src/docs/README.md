@@ -13,4 +13,4 @@ The Krist HTTP API reference is available at [https://krist.dev/docs/](https://k
 
 ### JavaScript
 
-- [krist.js](./libraries/krist-js.md) ([GitHub](https://github.com/tmpim/krist.js)) (**Official - Coming very soon**) JavaScript Krist library for Node.js and the browser with TypeScript typings.
+- [krist.js](./libraries/krist-js.md) ([GitHub](https://github.com/tmpim/krist.js)) (**Official**) JavaScript Krist library for Node.js and the browser with TypeScript typings.
