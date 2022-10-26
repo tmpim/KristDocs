@@ -45,7 +45,8 @@ module.exports = {
             ["https://krist.dev/docs/", "HTTP API reference"],
             "wallet-formats",
             "commonmeta",
-            "kristql"
+            "kristql",
+            "uri"
           ]
         },        
         {
