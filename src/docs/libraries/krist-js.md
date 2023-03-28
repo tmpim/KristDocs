@@ -76,13 +76,6 @@ return types, can be seen in the
 - [`getAddressNames(address, [options])`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getAddressNames)
 - [`getAddressTransactions(address, [options])`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getAddressTransactions)
 - [`getAddresses([options])`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getAddresses)
-- [`getBlock(height, [options])`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getBlock)
-- [`getBlockValue()`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getBlockValue)
-- [`getBlocks([options])`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getBlocks)
-- [`getDetailedWork()`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getDetailedWork)
-- [`getLastBlock()`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getLastBlock)
-- [`getLatestBlocks([options])`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getLatestBlocks)
-- [`getLowestBlocks([options])`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getLowestBlocks)
 - [`getName(name)`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getName)
 - [`getNameBonus()`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getNameBonus)
 - [`getNameCost()`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getNameCost)
@@ -91,17 +84,12 @@ return types, can be seen in the
 - [`getRichAddresses([options])`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getRichAddresses)
 - [`getTransaction(id)`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getTransaction)
 - [`getTransactions([options])`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getTransactions)
-- [`getWork()`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getWork)
-- [`getWorkOverTime()`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#getWorkOverTime)
 - [`login([options])`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#login)
 - [`makeTransaction(to, amount, [options])`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#makeTransaction)
 - [`motd()`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#motd)
 - [`paginateAddressNames(address, [options], onPageFn)`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#paginateAddressNames)
 - [`paginateAddressTransactions(address, [options], onPageFn)`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#paginateAddressTransactions)
 - [`paginateAddresses([options], onPageFn)`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#paginateAddresses)
-- [`paginateBlocks([options], onPageFn)`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#paginateBlocks)
-- [`paginateLatestBlocks([options], onPageFn)`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#paginateLatestBlocks)
-- [`paginateLowestBlocks([options], onPageFn)`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#paginateLowestBlocks)
 - [`paginateNames([options], onPageFn)`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#paginateNames)
 - [`paginateNewNames([options], onPageFn)`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#paginateNewNames)
 - [`paginateRichAddresses([options], onPageFn)`](https://docs.krist.dev/library/krist.js/classes/KristApi.html#paginateRichAddresses)
@@ -213,8 +201,6 @@ subscription types are supported:
 
 | Subscription name | Event         | Description                                                                               |
 | ----------------- | ------------- | ----------------------------------------------------------------------------------------- |
-| `blocks`          | `block`       | Block events whenever a block is mined by anybody on the node.                            |
-| `ownBlocks`       | `block`       | Block events whenever the authed user mines a block.                                      |
 | `transactions`    | `transaction` | Transaction events whenever a transaction is made by anybody on the node.                 |
 | `ownTransactions` | `transaction` | Transaction events whenever a transaction is made to or from the authed user.             |
 | `names`           | `name`        | Name events whenever a name is purchased, modified or transferred by anybody on the node. |

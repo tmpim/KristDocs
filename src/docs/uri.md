@@ -66,16 +66,3 @@ krist://name/meta@example.kst
 - Can be viewed by users with a web browser at 
   [https://krist.club/network/names/example](https://krist.club/network/names/example)
 
-#### Blocks
-
-```
-krist://block/1233456
-krist://blk/1233456
-```
-
-- Refers to the block with ID 123456. 
-- Must be an integer.
-- Equivalent to the resource at the URL 
-  [https://krist.dev/blocks/123456](https://krist.dev/blocks/123456)
-- Can be viewed by users with a web browser at 
-  [https://krist.club/network/blocks/123456](https://krist.club/network/blocks/123456)

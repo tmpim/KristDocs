@@ -40,19 +40,10 @@ The `addresses` table contains all addresses known to Krist, as well as their ba
 * `balance` - The amount of Krist stored in the address.
 * `firstseen` - The time and date the address was first seen by the Krist server. In JSON, this is an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) string. In CSV, this is a [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds.
 
-### Blocks
-The `blocks` table contains all blocks that have been mined. It has the following fields:
-* `id` - The ID, or 'height' of the block.
-* `value` - The amount of Krist that this block rewarded.
-* `hash` - The full 256-bit hash of this block, as a hexadecimal string.
-* `address` - The address that mined this block.
-* `time` - The time that this block was mined. In JSON, this is an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) string. In CSV, this is a [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds.
-* `difficulty` - The work at the time this block was mined. For the first few thousand blocks, these values may be inaccurate.
-
 ### Transactions
 The `transactions` table contains all transactions that have been made. It has the following fields:
 * `id` - The ID of this transaction.
-* `from` - The address that sent this transaction. If the transaction is a mined block, this value can be null.
+* `from` - The address that sent this transaction. This value can be null.
 * `to` - The address that this transaction was sent to. If this transaction was a name purchase, this value will be `name`. For A record changes on a name, this value will be `a`.
 * `value` - The amount of Krist transferred in this transaction. For A record changes on a name, this value can be 0.
 * `time` - The time that this transaction occured. In JSON, this is an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) string. In CSV, this is a [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds.
@@ -67,7 +58,7 @@ The `names` table contains all names that have been purchased. It has the follow
 * `registered` - The date and time that this name was registered. In JSON, this is an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) string. In CSV, this is a [Unix timestamp](https://en.wikipedia.org/wiki/Unix_time) in milliseconds.
 * `updated` - The date and time that this name was last transferred, or its A record was last updated.
 * `a` - The A record of this name.
-* `unpaid` - The amount of blocks remaining until this name is fully paid.
+* `unpaid` - Currently unused.
 
 ## The API
 The query API endpoint is `https://query.krist.dev/query?q=SELECT`. You can use GET or POST, and supply the query as a query or body parameter.
@@ -149,26 +140,6 @@ The API will return the appropriate HTTP status code for all requests. Additiona
       "time": "2019-01-13T17:07:01.000Z",
       "name": null,
       "meta": null
-    },
-    ...
-  ]
-}
-```
-
-### Get blocks with value larger than 50
-```GET https://query.krist.dev/query?q=SELECT * FROM `blocks` WHERE `value` > 50```
-```json
-{
-  "ok": true,
-  "count": 1951,
-  "results": [
-    {
-      "id": 56823,
-      "value": 52,
-      "hash": "000000030d9962002ceb50da18202ee6a7e9dee9d2dee6e214e4a0418b8e3e77",
-      "address": "k3s72l1pfa",
-      "time": "2015-05-10T18:06:20.000Z",
-      "difficulty": 2328677
     },
     ...
   ]
