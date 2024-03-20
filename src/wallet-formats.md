@@ -19,7 +19,7 @@ It applies the following transformations:
 - Append `-000`
 
 #### k.lua
-If you are using [k.lua](./libraries/k-lua.md), you can use `k.toKristWalletFormat(privatekey)`.
+If you are using [k.lua](libraries/k-lua.md), you can use `k.toKristWalletFormat(privatekey)`.
 
 #### Plain lua
 This requires a [sha256 API](http://www.computercraft.info/forums2/index.php?/topic/8169-sha-256-in-pure-lua/). 

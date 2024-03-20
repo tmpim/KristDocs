@@ -105,7 +105,7 @@ K.lua also supports websockets. These allow you to receive event data from the K
 ::: warning
 **Make sure your privatekey is in the correct format.** If you don't convert the privatekey 
 to the correct privatekey format, you may authenticate as the wrong address. You can read more about wallet privatekey 
-formats [here](./../wallet-formats.md).
+formats [here](../wallet-formats.md).
 :::
 
 ```lua

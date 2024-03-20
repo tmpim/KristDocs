@@ -7,18 +7,18 @@
     "name": "Drew Edwards",
     "email": "github@drew.contact"
   },
-  "repository": "https://github.com/tmpim/KristDocs/krist-docs",
+  "type": "module",
+  "repository": "https://github.com/tmpim/KristDocs",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src"
   },
   "license": "MIT",
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "vuepress": "^1.5.3"
+    "vitepress": "^1.0.0-rc.45"
   },
   "dependencies": {
-    "@vuepress/plugin-back-to-top": "^1.9.7",
-    "vuepress-theme-yuu": "^3.1.1"
+    "vue": "^3.4.21"
   }
 }

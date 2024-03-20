@@ -1,3 +1,6 @@
+.idea
+.vscode
 node_modules
 dist
-src/.vuepress/dist
+src/.vitepress/cache
+src/.vitepress/dist

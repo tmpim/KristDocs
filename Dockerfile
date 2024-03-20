@@ -1,9 +1,11 @@
-FROM node:16.17-alpine3.15
+FROM node:20-alpine
+
+RUN apk add git ca-certificates
+
 WORKDIR /build
-COPY ["package.json", "yarn.lock", "./"]
-RUN yarn global add vuepress@^1.5.3 vue@^2.7.10 vue-template-compiler@^2.7.10
+COPY package.json yarn.lock ./
 RUN yarn install
-ENV NODE_ENV=production
 COPY . .
 
+ENV NODE_ENV=production
 CMD yarn build

@@ -10,4 +10,5 @@ dist
 .basement
 config.local.js
 basement_dist
-.env
+src/.vitepress/cache
+src/.vitepress/dist

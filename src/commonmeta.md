@@ -48,5 +48,5 @@ added as an implicit field, `recipient`.
 
 ## Parsers
 
-Most Krist libraries, such as [k.lua](./libraries/k-lua.md) and [krist.js](./libraries/krist-js.md), have parsers for
+Most Krist libraries, such as [k.lua](libraries/k-lua.md) and [krist.js](libraries/krist-js.md), have parsers for
 CommonMeta built in. Refer to the library documentation for more information.
